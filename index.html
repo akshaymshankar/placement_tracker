@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency - Content Specialization and Video Editing Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-text">Agency</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">Agency</div>
+            <div class="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Top Quality<br><span class="gradient-text">Video Editing</span></h1>
+            <p class="hero-subtitle">Transform your content into viral masterpieces that dominate feeds</p>
+            <button class="cta-button glow-button hero-cta-blue" id="heroBtn">
+                <span class="hero-cta-text">🚀 Start Creating</span>
+                <div class="button-glow"></div>
+                <div class="pulse-effect"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">
+                Our <span class="gradient-text">Services</span>
+                <div class="title-underline"></div>
+            </h2>
+            <div class="services-grid">
+                <div class="service-card" data-service="production">
+                    <div class="service-icon">🎬</div>
+                    <h3 class="service-title">Full Production Editing</h3>
+                    <p class="service-description">Complete video transformation with cinema-grade color grading, sound design, and professional effects that rival Hollywood productions</p>
+                    <ul class="service-features">
+                        <li>4K/8K Resolution</li>
+                        <li>Color Grading</li>
+                        <li>Sound Design</li>
+                        <li>Professional Effects</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="viral">
+                    <div class="service-icon">🔥</div>
+                    <h3 class="service-title">Viral Short-Form Content</h3>
+                    <p class="service-description">TikTok, Instagram Reels, YouTube Shorts optimized for maximum engagement and guaranteed viral potential</p>
+                    <ul class="service-features">
+                        <li>Platform Optimization</li>
+                        <li>Trend Analysis</li>
+                        <li>Hook Creation</li>
+                        <li>Viral Formula</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="vfx">
+                    <div class="service-icon">
+                        <!-- Modern Attractive VFX/Motion Logo Icon (SVG) -->
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="20" fill="url(#vfxGradient)" />
+                            <g filter="url(#vfxGlow)">
+                                <path d="M22 12C25 18 32 16 32 22C32 28 25 26 22 32C19 26 12 28 12 22C12 16 19 18 22 12Z"
+                                    fill="url(#vfxShapeGradient)" stroke="#ffb347" stroke-width="2"/>
+                            </g>
+                            <circle cx="22" cy="22" r="7" fill="url(#vfxPulse)" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="vfxGradient" x1="8" y1="8" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#ffb347"/>
+                                    <stop offset="0.5" stop-color="#ff5e62"/>
+                                    <stop offset="1" stop-color="#00c6fb"/>
+                                </linearGradient>
+                                <linearGradient id="vfxShapeGradient" x1="12" y1="12" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#ff5e62"/>
+                                    <stop offset="1" stop-color="#00c6fb"/>
+                                </linearGradient>
+                                <radialGradient id="vfxPulse" cx="0" cy="0" r="1" gradientTransform="translate(22 22) scale(7)" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#ffb347"/>
+                                    <stop offset="1" stop-color="#ff5e62" stop-opacity="0"/>
+                                </radialGradient>
+                                <filter id="vfxGlow" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#ff5e62" flood-opacity="0.5"/>
+                                    <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#00c6fb" flood-opacity="0.4"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Motion Graphics & VFX</h3>
+                    <p class="service-description">Custom animations, 3D elements, and visual effects that make your content impossible to scroll past</p>
+                    <ul class="service-features">
+                        <li>3D Animation</li>
+                        <li>Custom Graphics</li>
+                        <li>VFX Integration</li>
+                        <li>Brand Animation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Stats Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="testimonials-carousel">
+                <div class="testimonial active" data-testimonial="0">
+                    <p>"This is incredible! Our views exploded overnight!"</p>
+                    <span>- Tech Startup Founder, TechFlow</span>
+                </div>
+                <div class="testimonial" data-testimonial="1">
+                    <p>"Best video editing team in the industry, hands down."</p>
+                    <span>- Marketing Director, GrowthCorp</span>
+                </div>
+                <div class="testimonial" data-testimonial="2">
+                    <p>"They made our content go viral instantly. Mind-blown!"</p>
+                    <span>- Content Creator, CreativeStudio</span>
+                </div>
+                <div class="testimonial" data-testimonial="3">
+                    <p>"ROI was insane. 10x our previous engagement rates."</p>
+                    <span>- CMO, ScaleUp Inc</span>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card stat-innovative">
+                    <div class="stat-number" data-target="2000" style="color: #fff;">0</div>
+                    <div class="stat-suffix" style="color: #fff;">+</div>
+                    <div class="stat-label" style="color: #fff; letter-spacing: 1px; font-weight: 500; border-top: 1px solid #fff; margin-top: 8px; padding-top: 8px;">Videos Edited</div>
+                </div>
+                <div class="stat-card" style="color: #fff;">
+                    <div class="stat-number" data-target="100" style="color: #fff;">0</div>
+                    <div class="stat-suffix" style="color: #fff;">M+</div>
+                    <div class="stat-label" style="color: #fff; letter-spacing: 1px; font-weight: 500; border-top: 1px solid #fff; margin-top: 8px; padding-top: 8px;">Total Views Generated</div>
+                </div>
+                <div class="stat-card" style="color: #fff;">
+                    <div class="stat-number" data-target="100" style="color: #fff;">0</div>
+                    <div class="stat-suffix" style="color: #fff;">M+</div>
+                    <div class="stat-label" style="color: #fff; letter-spacing: 1px; font-weight: 500; border-top: 1px solid #fff; margin-top: 8px; padding-top: 8px;">Total Views Generated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">
+                How It <span class="gradient-text">Works</span>
+            </h2>
+            <div class="process-steps">
+                <div class="process-step" data-step="1">
+                    <div class="step-icon">📤</div>
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Upload Your Footage</h3>
+                    <p class="step-description">Send us your raw content, brief, and vision through our secure portal. We handle everything from concept to completion.</p>
+                </div>
+                <div class="process-step" data-step="2">
+                    <div class="step-icon">⚡</div>
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">We Work Our Magic</h3>
+                    <p class="step-description">Our team of expert editors transform your footage with professional color grading, sound design, and viral-optimized cuts.</p>
+                </div>
+                <div class="process-step" data-step="3">
+                    <div class="step-icon">🚀</div>
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Dominate The Internet</h3>
+                    <p class="step-description">Receive viral-ready content optimized for each platform. Watch your engagement and follower count skyrocket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase" id="showcase">
+        <div class="container">
+            <h2 class="section-title">
+                Viral <span class="gradient-text">Successes</span>
+            </h2>
+            <div class="showcase-grid">
+                <div class="video-preview">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                        <div class="video-overlay">
+                            <div class="video-title">Tech Product Launch</div>
+                            <div class="video-views">2.5M+ Views</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                        <div class="video-overlay">
+                            <div class="video-title">Brand Storytelling</div>
+                            <div class="video-views">4.8M+ Views</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="video-thumbnail">
+                        <div class="play-button">▶</div>
+                        <div class="video-overlay">
+                            <div class="video-title">Viral Campaign</div>
+                            <div class="video-views">7.2M+ Views</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <h2 class="section-title">
+                Choose Your <span class="gradient-text">Package</span>
+            </h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Scale</h3>
+                        <p class="package-description">Elevate your existing content through professional editing</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ Raw Footage Analysis</li>
+                        <li>✓ Professional Editing</li>
+                        <li>✓ Color Grading & Sound</li>
+                        <li>✓ Platform Optimization</li>
+                        <li>✓ Viral Moment Identification</li>
+                        <li>✓ Thumbnail Creation</li>
+                        <li>✓ 24/7 Support</li>
+                        <li>✓ Fast Turnaround</li>
+                    </ul>
+                    <button class="package-button">KNOW MORE</button>
+                </div>
+                <div class="package-card premium">
+                    <div class="package-header">
+                        <h3 class="package-title">Launch</h3>
+                        <p class="package-description">Complete video strategy from concept to viral success</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ Strategy Development</li>
+                        <li>✓ Professional Editing</li>
+                        <li>✓ Motion Graphics & VFX</li>
+                        <li>✓ Platform Optimization</li>
+                        <li>✓ Viral Campaign Management</li>
+                        <li>✓ Thumbnail & Graphics Suite</li>
+                        <li>✓ 24/7 Support</li>
+                        <li>✓ Dedicated Account Manager</li>
+                        <li>✓ Content Strategy Planning</li>
+                        <li>✓ Performance Analytics</li>
+                    </ul>
+                    <button class="package-button">KNOW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">
+                Frequently <span class="gradient-text">Asked</span>
+            </h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes us different from other video editing agencies?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We combine Hollywood-level production quality with viral content strategy. Our team has worked on content that's generated over 100M views and we guarantee results.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How fast is our turnaround time?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard projects: 3-5 days. Rush jobs: 24-48 hours. We're built for speed without compromising quality.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's our pricing structure?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible packages starting from $500 for basic editing up to $5000+ for complete viral campaigns. Custom quotes available.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you guarantee viral success?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While we can't guarantee specific view counts, our track record speaks for itself. 95% of our content achieves above-average engagement rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer/CTA Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-title">
+                    Ready to Go <span class="gradient-text">Viral</span>?
+                </h2>
+                <p class="footer-subtitle">Join the creators dominating social media with our cinema-quality editing</p>
+                <button class="cta-button glow-button footer-btn">
+                    <span>Let's Create Magic</span>
+                    <div class="button-glow"></div>
+                </button>
+                <div class="footer-links">
+                    <p>hello@viralcuts.com | +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
